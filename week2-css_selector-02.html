@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 css selectors 02</title>
+    <style>
+        #fl>p:first-child{
+            color:lime;
+        }
+        p:nth-last-child(n+5){
+            color:magenta;
+        }
+        p:only-child{
+            color:cornflowerblue;
+        }
+        p:nth-child(3){
+            color:red;
+        }
+        #divText>p:nth-child(odd){
+            color:blue;
+        }
+        #even>p:nth-child(even){
+            color:chocolate;
+        }
+        p:nth-child(3n+1){
+            border: 2px dotted black;
+        }
+    </style>
+</head>
+<body>
+    <div id="fl">
+        <p>first and last 1</p>
+        <p>first and last 2</p>
+        <p>first and last 3</p>
+        <p>first and last 4</p>
+        <p>first and last 5</p>
+    </div>
+
+    <p class="texty">this is text 01</p>
+    <p class="texty">this is text 02</p>
+    <p class="texty">this is text 03</p>
+    <p class="texty">this is text 04</p>
+    
+    <div>
+        <p>This is some text</p>
+    </div>
+
+    <div id="divText" style="font-size: 1.4em;" >
+        <p>text text text texty 1</p>
+        <p>text text text texty 2</p>
+        <p>text text text texty 3</p>
+        <p>text text text texty 4</p>
+        <p>text text text texty 5</p>
+        <p>text text text texty 6</p>
+    </div>
+    
+    <div id="even" style="font-size: 1.2em;">
+        <p>even text div 1</p>
+        <p>even text div 2</p>
+        <p>even text div 3</p>
+        <p>even text div 4</p>
+    </div>
+
+
+</body>
+</html>
