@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Semantic 04</title>
+
+    <style>
+        header{
+            background-color: lightslategray;
+            padding: 20px;
+        }
+        .row{
+            display: table;
+            width: 100%;
+        }
+        .column{
+            display: table-cell;
+            padding: 20px;
+        }
+        nav{
+            background-color: lightskyblue;
+        }
+        #mid{
+            background-color: lightgray;
+        }
+        .middle{
+            background-color: lightsteelblue;
+            padding: 10px;
+            margin: 10px;
+        }
+        .midFoot{
+            background-color: linen;
+            padding: 5px;
+        }
+        #col3{
+            background-color: lightpink;
+        }
+        .thirdSect{
+            background-color: navajowhite;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        #mainFoot{
+            background-color: lightslategray;
+            width: 100%;
+            padding: 20px;
+        }
+       
+    </style>
+
+
+</head>
+<body>
+
+    <header>
+        <h1>Header for page</h1>
+    </header>
+
+    <div class="row">
+
+        <nav class="column">
+            <a href="https://www.google.com">Google</a>
+            <a href="https://scccd.instructure.com">Canvas</a>
+        </nav>
+
+        <article class="column" id="mid">
+            <h2>Article</h2>
+
+            <section class="middle">
+                <h4>Section Middle one</h4>
+            </section>
+            <section class="middle">
+                <h4>Section Middle two</h4>
+            </section>
+
+            <footer class="midFoot">
+                <h6>Aritcle footer</h6>
+            </footer>
+
+        </article>
+
+        <aside class="column" id="col3">
+            <h2>Aside</h2>
+
+            <section class="thirdSect">
+                <h3>Column 3 section one</h3>
+            </section>
+
+            <section class="thirdSect">
+                <h3>Column 3 section two</h3>
+            </section>
+
+            <section class="thirdSect">
+                <h3>Column 3 section three</h3>
+            </section>
+
+        </aside>
+
+    </div>
+    <footer id="mainFoot">
+        <h3>Main footer</h3>
+    </footer>
+
+</body>
+</html>

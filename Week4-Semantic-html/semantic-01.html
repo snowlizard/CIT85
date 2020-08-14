@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Semantic HTML 01</title>
+        <meta charset="UTF-8"/>
+
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            .wrapper{
+                width:100vw;
+                height:50vh;
+                display:grid;
+                grid-template-areas: 
+                "head head"
+                "lefty righty"
+                "foot foot";
+                grid-gap: 10px;
+            }
+            #head{
+                grid-area: head;
+                background: green;
+
+            }
+            #left{
+                grid-area: lefty;
+            }
+            #right{
+                grid-area: righty;
+            }
+            #foot{
+                grid-area: foot;
+                background-color: darkgrey;
+                height: 100px;
+            }
+
+        </style>
+    </head>
+
+<div class="wrapper">
+    <header id="head">
+        <h1>This is the header!</h1>
+    </header>
+
+    <section id="left" style="background-color: aqua;">
+    <h1>This is a section</h1>
+    <article style="background-color: aquamarine;">
+        <h2>This is an article</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquet vulputate porta. Cras vitae scelerisque purus. Aliquam erat lectus, vulputate id lobortis sed, faucibus a massa. Nunc condimentum nisi quis neque finibus lobortis. Phasellus tortor diam, volutpat et mattis eget, faucibus id felis. Duis convallis magna vitae sem lobortis condimentum. Sed egestas dolor eu ipsum condimentum finibus. Fusce hendrerit mollis libero, ut fringilla ipsum finibus nec. Nam turpis nulla, hendrerit ac ante ac, porta efficitur nibh. </p>
+    </article>
+</section>
+
+<aside id="right" style="background-color: lightskyblue;">
+    <h1>This is an aside</h1>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquet vulputate porta. Cras vitae scelerisque purus. Aliquam erat lectus, vulputate id lobortis sed, faucibus a massa. Nunc condimentum nisi quis neque finibus lobortis. Phasellus tortor diam, volutpat et mattis eget, faucibus id felis. Duis convallis magna vitae sem lobortis condimentum. Sed egestas dolor eu ipsum condimentum finibus. Fusce hendrerit mollis libero, ut fringilla ipsum finibus nec. Nam turpis nulla, hendrerit ac ante ac, porta efficitur nibh. </p>
+</aside>
+
+<footer id="foot"> 
+    <h6>This is a footer</h1>
+</footer>
+
+</div>
+
+</html>
