@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 4 Semantic html II</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        #logo{
+            width: 150px;
+            height: 85px;
+        }
+        .head{
+            background:grey;
+            width: 100%;
+            height: 12%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        #main-header{
+            display: flex;
+        }
+        #main-header > div { 
+            display: flex; 
+            flex-direction: column;
+            align-items: center;    
+        }
+        div > h1{ font-size: 3.5em; }
+        #navi > a {
+            text-decoration: none;
+            color:black;
+            font-size: 1em;
+        }
+        #navi > a:hover{
+            color: white;
+        }
+        #navi{
+            width: 100%;
+            margin-left: 50px;
+        }
+        .container{ height: 75%;}
+        #left{
+            float: left;
+            width: 50%;
+            height: 100%;
+            background:seashell;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #left > header, section, footer {
+            height: 25%;
+        }
+        #right{
+            float:right;
+            width: 50%;
+            height: 100%;
+            background: slategray;
+        }
+        #right > h2, p {
+            margin-left: 25px;
+            margin-top: 25px;
+        }
+        #right > h2 {
+            font-size: 2em;
+        }
+        #mainFooter{
+            width: 100%;
+            height: 13%;
+            background: grey;
+            display: flex;
+            align-items: flex-end;
+        }
+        #mainFooter > ul {
+            margin-bottom: 25px;
+            margin-left: 15px;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+    <div class="head">
+    <header id="main-header">
+        <div>
+            <h1>Welcome to our website</h1>
+            <p style="font-size: 1.5em;">Here is our logo and slogan.</p>
+        </div>
+        <img id="logo" src="https://www.macworld.co.uk/cmsdata/features/3608274/Terminalicon2_thumb1200_4-3.png" alt="logo" />
+    </header>
+
+    <nav id="navi">
+        <a href="#sec1">Menu 1</a>
+        <a href="#sec2">Menu 2</a>
+        <a href="#right">Menu 3</a>
+    </nav>
+    </div>
+
+    <div class="container">
+    <article id="left">
+        <header>
+            <h2>Title of Article</h2>
+        </header>
+    
+        <section id="sec1">
+            <h3>First Logical Part (e.g. "Theory")</h3>
+            <p>Paragraph 1 in first section</p>
+    
+            <h3>Some Other Subheading in First Section</h3>
+            <p>Paragraph 2 in first section</p>
+        </section>
+    
+        <section id="sec2">
+            <h3>Second Logical Part (e.g. "Practice")</h3>
+            <p>Paragraph 1 in second section</p>
+            <p>Paragraph 2 in second section</p>
+        </section>
+    
+        <footer id="secFoot">
+            <h4>Author Bio</h4>
+            <p>Paragraph in Article's Footer</p>
+        </footer>
+    
+    </article>
+    
+    <aside id="right">
+        <h2>Get To Know Us Better</h2>
+        <p>blah blah blah blah blah</p>
+    </aside>
+    </div>
+    
+    <footer id="mainFooter">
+        <ul>
+            <li>Copyright</li>
+            <li>Social Media Links</li>
+        </ul>
+    </footer>
+</div>
+
+
+
+</body>
+</html>
