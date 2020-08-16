@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+
+    <style>
+        *{ margin: 0; padding: 0;}
+        body{
+            width: 100vw;
+            height: 100vh;
+            border: 3px dotted blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #wrapper{
+            width: 80%;
+            height: 80%;
+            border: 3px dotted blue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .boxes{
+            margin-bottom: 10px;
+            width: 125px;
+            height: 100px;
+            border: 2px solid black;
+            border-radius: 25px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="wrapper">
+        <div class="boxes" id="redBox" style="background: red;"></div>
+        <div class="boxes" id="blueBox" style="background: blue;"></div>
+        <div class="boxes" id="yellowBox" style="background: yellow;"></div>
+        <div class="boxes" id="greenBox" style="background: green;"></div>
+    </div>
+</body>
+</html>
