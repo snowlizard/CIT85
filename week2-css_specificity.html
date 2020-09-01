@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS specificity</title>
+    <meta charset="UTF-8"/>
+
+    <style>
+    
+    
+    p{
+        color: greenyellow;
+        width: auto;
+        height: auto;
+        border: 3px solid hotpink;
+    }
+
+
+    div.divOne {
+        color: blue;
+        width:auto;
+        height: 250px;
+        border:3px solid darkgreen;
+    }
+    div#divID {
+        color: crimson;
+        width: 500px;
+        height: 500px;
+        border:10px solid cyan;
+    }
+    div.three {
+        color: maroon;
+        width: auto;
+        height: auto;
+        border:4px solid crimson;
+    }
+    li{
+        color: hotpink;
+        width: auto;
+        height: fit-content;
+        border:5px solid black;
+    }
+
+
+    </style>
+</head>
+<body>
+    <!- 10 -->
+    <div class="divOne">
+        <h1>Hello world!</h1>
+        <p>this is some text in a div tag 1</p>
+        <p>this is some text in a div tag 2</p>
+        <p>this is some text in a div tag 3</p>
+    </div>
+
+    <!- 1 -->
+    <p>I'm text inside the body not in any div tags</p>
+
+    <!- 100 -->
+    <div id="divID">
+        <!- 1 -->
+        <h1>Hello Mars!</h1>
+        <p>this is text in a div tag with and ID 1</p>
+        <p>this is text in a div tag with and ID 2</p>
+        <p>this is text in a div tag with and ID 3</p>
+    </div>
+
+    <!- 10 -->
+    <div class="three">
+        <lu>
+            <!- 1 -->
+            <li>this is a list 1</li>
+            <li>this is a list 2</li>
+            <li>this is a list 3</li>
+        </lu>
+    </div>
+
+
+
+
+</body>
+</html>
