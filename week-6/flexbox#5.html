@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flexbox #5</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .wrapper{
+            width: 500px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            background: orchid;
+            color: white;
+        }
+        #div1{
+            background: darkblue;
+            width: 25%;
+        }
+        #twoThree{
+            border: 2px solid orangered;
+            width: 75%;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        #twoThree > div {
+            width: 100%;
+        }
+        #div2{
+            background: blue;
+        }
+        #div3{
+            background: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="bar" id="div1">one</div>
+        <div id="twoThree">
+            <div id="div2">two</div>
+            <div id="div3">three</div>  
+        </div>
+    </div>
+
+</body>
+</html>
