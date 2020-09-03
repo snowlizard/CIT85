@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flexbox #4</title>
+    <style>
+        *{ margin: 0; padding: 0;}
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .wrapper{
+            width: 500px;
+            height: 200px;
+            border: 2px solid orangered;
+            overflow: hidden;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .divs{
+            height: 100px;
+            flex: 1 0 auto;
+            width: 33.33%;
+        }
+        #one{
+            background: darkblue;
+            width: 60%;
+        }
+        #two{
+            background: blue;
+            width: 40%;
+        }
+        #three{
+            background: lightskyblue;
+        }
+        #four{
+            background: lightslategrey;
+        }
+        #five{
+            background: lightsteelblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="divs" id="one"></div>
+        <div class="divs" id="two"></div>
+        <div class="divs" id="three"></div>
+        <div class="divs" id="four"></div>
+        <div class="divs" id="five"></div>
+    </div>
+</body>
+</html>
