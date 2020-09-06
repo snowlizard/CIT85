@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox #7 two break points</title>
+
+    <style>
+        *{ margin: 0;}
+
+        .wrapper{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: flex-start;
+            text-align: center;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            background: skyblue;
+            order: 1;
+        }
+        article{
+            background: lightblue;
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            order: 2;
+        }
+        #aOne{
+            background: lightgray;
+            width: 100%;
+            height: 100px;
+            order: 3;
+        }
+        #aTwo{
+            background: lightskyblue;
+            width: 100%;
+            height: 100px;
+            order: 4;
+        }
+        footer{
+            background: lightsteelblue;
+            width: 100%;
+            height: 100px;
+            order: 5;
+        }
+
+        @media only screen and (min-width: 700px){
+            #aOne{
+                width: 50%;
+            }
+            #aTwo{
+                width: 50%;
+            }
+        }
+
+        @media only screen and ( min-width: 1200px){
+            article{
+                width: 75%;
+            }
+            #aOne{ width: 12.5%; height: 200px; order: 1; }
+            #aTwo{ width: 12.5%; height: 200px; order: 4; }
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="wrapper">
+        <header>
+            <h1>Header</h1>
+        </header>
+
+        <article>
+            Suspendisse dapibus pretium condimentum. Phasellus venenatis tempus dapibus. Praesent lectus magna, posuere quis venenatis id, auctor a lacus. Praesent vulputate pellentesque leo, a pellentesque libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed fermentum vestibulum arcu, a ullamcorper mi. Aliquam sed leo maximus, sagittis est sed, convallis ex. Mauris vitae turpis nulla. In condimentum enim ut orci ultrices laoreet. Mauris nec mattis nunc, sit amet molestie enim. 
+        </article>
+
+        <aside id="aOne">
+            Aside 1
+        </aside>
+
+        <aside id="aTwo">
+            Aside
+        </aside>
+        
+        <footer>
+            Footer
+        </footer>
+    </div>
+
+
+</body>
+</html>
