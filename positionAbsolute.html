@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position absolute</title>
+
+    <style>
+        *{ margin: 0; }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .square{
+            background: orangered;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+        }
+
+        #relative_{
+            position: relative;
+            left: 100px;
+        }
+
+        #absolute_{
+            position: absolute;
+            left: 110px;
+            top: 50px;
+            border: 1px  solid black;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="square"></div>
+    <div class="square" id="relative_"></div>
+    <div class="square"></div>
+    <div class="square" id="absolute_"></div>
+
+</body>
+</html>
