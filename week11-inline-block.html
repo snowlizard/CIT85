@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 11 Same Layout, INLINE-BLOCK</title>
+
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: inline-block;
+        }
+        .blocks{
+            width: 100%;
+            height: 200px;
+        }
+        .subBlocks{
+            display: inline-block;
+            height: inherit;
+            border: 5px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="blocks" style="background: yellow; border: 6px solid blue;" ></div>
+    <div class="blocks" style="background: green; border: 6px solid darkgreen;">
+        <div class="subBlocks" style="background: lightblue; width: 19%;"></div>
+        <div class="subBlocks" style="background: greenyellow; width: 80%;"></div>
+    </div>
+    <div class="blocks" style="background: purple; border: 6px solid red;"></div>
+
+</body>
+</html>
